@@ -11,4 +11,4 @@
 2. Run `python myapp.py`
 3. Run API testing tool
 
-![postman_example](/python_flask_api/myproject//venv/resources/postman_example.png?raw=true)
+![postman_example](/python_flask_api/myproject//venv/resources/postman_example.png)
