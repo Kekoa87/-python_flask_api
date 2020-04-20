@@ -11,4 +11,4 @@
 2. Run `python myapp.py`
 3. Run API testing tool
 
-![postman_example](/venv/resources/postman_example.png)
+![postman_example](venv/resources/postman_example.png)
