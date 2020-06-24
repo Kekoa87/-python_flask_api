@@ -13,4 +13,15 @@
 
 ![postman_example](myproject/venv/resources/postman_example.png)
 
+## Swagger
+> Note: If having issues with refreshing after making changes to swagger.json try clearing cache.
+
 ![swagger_example](myproject/venv/resources/swaggerDoc.png)
+
+## Resource
+
+https://medium.com/@sean_bradley/add-swagger-ui-to-your-python-flask-api-683bfbb32b36
+
+https://pypi.org/project/flask-swagger/
+
+https://django-rest-swagger.readthedocs.io/en/latest/
