@@ -8,6 +8,7 @@
 import os
 from flask import Flask
 from flask_restful import Api, Resource, reqparse
+from flask_swagger_ui import get_swaggerui_blueprint
 
 app = Flask(__name__)
 api = Api(app)
@@ -16,6 +17,23 @@ api = Api(app)
 # parsing interface which will be used later on. Then creating an app using
 # “Flask” class, “__name__” is a Python special variable which gives Python file
 # a unique name, in this case, telling the app to run in this specific place.
+
+# ==============================================================================
+# swagger specific:
+# In the below code, a URI is created at the /swagger endpoint, and it returns a
+# file called /swagger.json which will be parsed inside a self hosted Swagger-UI
+# front end.
+# ==============================================================================
+SWAGGER_URL = '/swagger'
+API_URL = '/static/swagger.json'
+SWAGGERUI_BLUEPRINT = get_swaggerui_blueprint(
+    SWAGGER_URL,
+    API_URL,
+    config={
+        'app_name': "My-Python-Flask-API-App"
+    }
+)
+app.register_blueprint(SWAGGERUI_BLUEPRINT, url_prefix=SWAGGER_URL)
 
 # ==============================================================================
 # This method is used for testing and is focusing on creating an API, but in
