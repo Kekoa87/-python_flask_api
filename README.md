@@ -12,3 +12,5 @@
 3. Run API testing tool
 
 ![postman_example](myproject/venv/resources/postman_example.png)
+
+![swagger_example](myproject/venv/resources/swaggerDoc.png)
