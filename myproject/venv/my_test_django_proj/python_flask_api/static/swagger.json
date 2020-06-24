@@ -98,13 +98,6 @@
   },
   "components": {
     "schemas": {
-      "id": {
-        "properties": {
-          "uuid": {
-            "type": "string"
-          }
-        }
-      },
       "userRequestPostBody": {
         "type": "object",
         "properties": {
